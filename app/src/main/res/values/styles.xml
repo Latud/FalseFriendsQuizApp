@@ -1,0 +1,25 @@
+<resources>
+
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="marginTopBottom20">20dp</dimen>
+    <dimen name="textSizeQuizName34">34sp</dimen>
+    <dimen name="textSize20">20sp</dimen>
+    <dimen name="marginTop12">12dp</dimen>
+    <dimen name="paddingLeftCheckBox15">15dp</dimen>
+    <dimen name="textSize16">16sp</dimen>
+    <dimen name="marginText24">24dp</dimen>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#009688</item>
+        <item name="colorPrimaryDark">#009688</item>
+        <item name="colorAccent">#009688</item>
+        <item name="colorButtonNormal">#009688</item>
+    </style>
+
+    <style name="my_checkbox_style">
+        <item name="buttonTint">#009688</item>
+    </style>
+
+</resources>

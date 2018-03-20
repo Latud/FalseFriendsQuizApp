@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/avocado_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avocado11" />
+
+        <ImageView
+            android:id="@+id/avocado_image1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avocado_image"
+            android:src="@drawable/avocado11" />
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/marginTopBottom20"
+                android:gravity="center"
+                android:text="@string/false_friends_quiz"
+                android:textColor="@color/green"
+                android:textSize="@dimen/textSizeQuizName34"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                android:text="@string/choose_the_correct_translation"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="@string/casualidad_questionI"
+                android:textColor="@color/green"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/coincidence_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginTop="@dimen/marginTop12"
+                android:background="@color/background"
+                android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                android:text="Coincidence"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/casualty_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:background="@color/background"
+                android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                android:text="Casualty"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/chance_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:background="@color/background"
+                android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                android:text="Chance"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="@string/bombero_questionII"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop12">
+
+                <RadioButton
+                    android:id="@+id/rb_deMining_expert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:background="@color/background"
+                    android:onClick="onRadioButtonClicked1"
+                    android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                    android:text="De-mining expert"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_firefighter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:background="@color/background"
+                    android:onClick="onRadioButtonClicked1"
+                    android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                    android:text="Firefighter"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_bomber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:background="@color/background"
+                    android:onClick="onRadioButtonClicked1"
+                    android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                    android:text="Bomber"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="@string/carpeta_questionIII"
+                android:textColor="@color/green"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop12">
+
+                <RadioButton
+                    android:id="@+id/rb_folder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:background="@color/background"
+                    android:onClick="onRadioButtonClicked2"
+                    android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                    android:text="Folder"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_carpet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:background="@color/background"
+                    android:onClick="onRadioButtonClicked2"
+                    android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                    android:text="Carpet"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_female_carp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:background="@color/background"
+                    android:onClick="onRadioButtonClicked2"
+                    android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                    android:text="Female carp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="@string/largo_questionIV"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop12">
+
+                <RadioButton
+                    android:id="@+id/rb_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:background="@color/background"
+                    android:onClick="onRadioButtonClicked3"
+                    android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                    android:text="Large"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_lake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:background="@color/background"
+                    android:onClick="onRadioButtonClicked3"
+                    android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                    android:text="Lake"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_long_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:background="@color/background"
+                    android:onClick="onRadioButtonClicked3"
+                    android:paddingLeft="@dimen/paddingLeftCheckBox15"
+                    android:text="Long"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="@string/realizar_questionV"
+                android:textColor="@color/green"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginText24"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/marginTop12"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="- Release"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginText24"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/marginTop12"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="- Realize"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginText24"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/marginTop12"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="- Do"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/correct_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/marginTop12"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/enter_correct_answer"
+                android:inputType="textCapWords"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="@string/aguacate_questionVI"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginText24"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/marginTop12"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="- Avocado"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginText24"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/marginTop12"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="- Aguacate"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginText24"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/marginTop12"
+                android:background="@color/background"
+                android:paddingRight="@dimen/margin16"
+                android:text="- Abogado"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize16"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/correct_answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/marginTop12"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/enter_the_spanish_name"
+                android:inputType="textCapWords"
+                android:paddingRight="@dimen/textSize16"
+                android:textColor="@color/green" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:layout_weight="1"
+                    android:onClick="submitAnswers"
+                    android:text="@string/submit_answers"
+                    android:textAllCaps="true"
+                    android:id="@+id/submit_answers"/>
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin16"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:layout_weight="1"
+                    android:onClick="Reset"
+                    android:text="@string/reset" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin16"
+                    android:layout_marginRight="@dimen/margin16"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:background="@color/background"
+                    android:paddingRight="@dimen/margin16"
+                    android:text="@string/correct_answers"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/quantity_of_correct_answers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin16"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:background="@color/background"
+                    android:paddingRight="@dimen/margin16"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/view_correct_answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:text="Casualidad: coincidence, chance"
+                android:textSize="@dimen/textSize16"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/view_correct_answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:text="Bombero: firefighter"
+                android:textSize="@dimen/textSize16"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/view_correct_answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:text="Carpeta: folder"
+                android:textSize="@dimen/textSize16"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/view_correct_answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:text="Largo: long"
+                android:textSize="@dimen/textSize16"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/view_correct_answer5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:text="Realizar: do"
+                android:textSize="@dimen/textSize16"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/view_correct_answer6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginTopBottom20"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:text="Aguacate :))"
+                android:textSize="@dimen/textSize16"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

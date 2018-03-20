@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="false_friends_quiz">False Friends Quiz</string>
+    <string name="choose_the_correct_translation">Choose the correct translation</string>
+    <string name="casualidad_questionI">I. Casualidad. (Please take a note that here there are two correct answers!)</string>
+    <string name="bombero_questionII">II. Bombero. (Choose only one correct answer)</string>
+    <string name="carpeta_questionIII">III. Carpeta.(Choose only one correct answer)"</string>
+    <string name="largo_questionIV">IV. Largo.(Choose only one correct answer)</string>
+    <string name="realizar_questionV">V. Realizar.(Enter the correct answer in the field below)</string>
+    <string name="enter_correct_answer">Enter the correct answer</string>
+    <string name="aguacate_questionVI">VI. Enter the Spanish word for the background image</string>
+    <string name="enter_the_spanish_name">Enter the Spanish name of this fruit</string>
+    <string name="submit_answers">Submit Answers</string>
+    <string name="reset">Reset</string>
+    <string name="correct_answers">Correct answers: </string>
+    <string name="casualty_incorrect_answer">Casualty is not the correct answer</string>
+    <string name="choose_the_correct_answer">Choose the correct answer</string>
+    <string name="you_have_quantity_correct_answers">You have %1$d correct answer(s) of 7</string>
+</resources>
